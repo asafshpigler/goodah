@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOODAH – Choose. Buy. Change.</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <svg class="logo-icon" viewBox="0 0 60 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 8C30 8 24 0 18 0C12 0 8 4 8 10C8 18 30 32 30 32C30 32 52 18 52 10C52 4 48 0 42 0C36 0 30 8 30 8Z" fill="white" opacity="0.9"/>
+          <rect x="5" y="28" rx="2" width="50" height="4" fill="white"/>
+          <path d="M12 32L16 50H44L48 32" stroke="white" stroke-width="3" fill="none"/>
+          <line x1="30" y1="32" x2="30" y2="50" stroke="white" stroke-width="2"/>
+          <circle cx="20" cy="54" r="3" fill="white"/>
+          <circle cx="40" cy="54" r="3" fill="white"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">GOODAH</span>
+          <span class="logo-tagline">Choose . Buy . Change</span>
+        </div>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#platform">OUR PLATFORM</a></li>
+        <li><a href="#involved">GET INVOLVED</a></li>
+        <li><a href="#partners">OUR PARTNERS</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Carousel -->
+  <section class="hero" id="home">
+    <div class="carousel">
+      <div class="carousel-slides">
+        <div class="slide slide--shopping active" style="background-image: url('images/hero-shopping.png')">
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <h1>I CHOOSE GOODAH</h1>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('images/hero-seesaw.png')">
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <h1>CREATING SOCIAL ROI</h1>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('images/slide-platform.png')">
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <h1>CONSUMER<br>DRIVEN PLATFORM</h1>
+            <p>Inspiring companies to invest in society</p>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('images/slide-flourish.png')">
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <h1>HELPING SOCIETY FLOURISH</h1>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn prev" aria-label="Previous slide">&#10094;</button>
+      <button class="carousel-btn next" aria-label="Next slide">&#10095;</button>
+      <div class="carousel-dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title">About GOODAH</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="lead">GOODAH is a consumer-driven platform that empowers everyday shoppers to create meaningful social impact through their purchasing decisions.</p>
+          <p>We believe that commerce can be a powerful force for good. By connecting consumers with socially responsible brands, GOODAH creates a virtuous cycle where buying better means living better — for everyone.</p>
+          <p>Our mission is simple: inspire companies to invest in society by giving consumers the tools to choose products that make a difference. Every purchase on our platform generates a Social Return on Investment (Social ROI) that benefits communities in need.</p>
+        </div>
+        <div class="about-image">
+          <img src="images/hero-shopping.png" alt="Consumer choosing products">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="section values">
+    <div class="container">
+      <h2 class="section-title">Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L30 16H42L32 24L36 38L24 30L12 38L16 24L6 16H18L24 4Z" fill="currentColor"/></svg>
+          </div>
+          <h3>Choose</h3>
+          <p>Empower consumers to make informed, ethical purchasing decisions that align with their values and benefit society.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="20" width="36" height="24" rx="2" stroke="currentColor" stroke-width="3" fill="none"/><path d="M16 20V12C16 7.58 19.58 4 24 4C28.42 4 32 7.58 32 12V20" stroke="currentColor" stroke-width="3" fill="none"/></svg>
+          </div>
+          <h3>Buy</h3>
+          <p>Every purchase becomes a vote for a better world. Buy from brands that are committed to positive social impact.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4V44M4 24H44M12 12L36 36M36 12L12 36" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Change</h3>
+          <p>Transform markets from the ground up. Consumer choices drive companies to adopt socially responsible practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform Section -->
+  <section class="section platform" id="platform">
+    <div class="container">
+      <h2 class="section-title">Our Platform</h2>
+      <div class="platform-grid">
+        <div class="platform-image">
+          <img src="images/hero-seesaw.png" alt="Social ROI — balancing people and profit">
+        </div>
+        <div class="platform-text">
+          <h3>Creating Social ROI</h3>
+          <p>GOODAH's platform measures and maximizes the social return on every transaction. We bridge the gap between consumer spending and community benefit, ensuring that profits and people are always in balance.</p>
+          <ul class="platform-features">
+            <li>Transparent impact tracking for every purchase</li>
+            <li>Direct funding to verified community programs</li>
+            <li>Real-time social impact dashboards for brands</li>
+            <li>Consumer rewards for socially conscious shopping</li>
+          </ul>
+        </div>
+      </div>
+      <div class="platform-grid reverse">
+        <div class="platform-text">
+          <h3>Inspiring Companies to Invest in Society</h3>
+          <p>Our consumer-driven approach motivates brands to go beyond traditional corporate social responsibility. When consumers choose GOODAH-certified products, companies see a direct business case for doing good.</p>
+          <ul class="platform-features">
+            <li>Brand certification and social impact scoring</li>
+            <li>Consumer engagement analytics</li>
+            <li>Partnership opportunities with nonprofits</li>
+            <li>Marketing tools that highlight social commitment</li>
+          </ul>
+        </div>
+        <div class="platform-image">
+          <img src="images/slide-platform.png" alt="Consumer driven platform" style="object-position: center;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Stats -->
+  <section class="section stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-number" data-target="150">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Partner Brands</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="50000">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Active Consumers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="200">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Community Programs Funded</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="12">0</span>
+          <span class="stat-label">Countries Reached</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Involved Section -->
+  <section class="section involved" id="involved">
+    <div class="container">
+      <h2 class="section-title">Get Involved</h2>
+      <p class="section-subtitle">There are many ways to be part of the GOODAH movement</p>
+      <div class="involved-grid">
+        <div class="involved-card">
+          <div class="involved-number">01</div>
+          <h3>Shop With Purpose</h3>
+          <p>Choose GOODAH-certified products when you shop. Every purchase generates social impact and supports communities in need.</p>
+        </div>
+        <div class="involved-card">
+          <div class="involved-number">02</div>
+          <h3>Become a Partner Brand</h3>
+          <p>Join our growing network of socially responsible companies. Get certified, engage conscious consumers, and amplify your impact.</p>
+        </div>
+        <div class="involved-card">
+          <div class="involved-number">03</div>
+          <h3>Spread the Word</h3>
+          <p>Share the GOODAH mission with your network. The more people who choose consciously, the greater the impact we create together.</p>
+        </div>
+        <div class="involved-card">
+          <div class="involved-number">04</div>
+          <h3>Nonprofit Collaboration</h3>
+          <p>If you run a community program, partner with GOODAH to receive funding and support from our network of engaged consumers and brands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="section partners" id="partners">
+    <div class="container">
+      <h2 class="section-title">Our Partners</h2>
+      <p class="section-subtitle">We collaborate with organizations committed to creating lasting social change</p>
+      <div class="partners-grid">
+        <div class="partner-placeholder">Partner</div>
+        <div class="partner-placeholder">Partner</div>
+        <div class="partner-placeholder">Partner</div>
+        <div class="partner-placeholder">Partner</div>
+        <div class="partner-placeholder">Partner</div>
+        <div class="partner-placeholder">Partner</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-subtitle">We'd love to hear from you</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <h4>Address</h4>
+              <p>123 Social Impact Lane<br>Amsterdam, Netherlands</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div>
+              <h4>Email</h4>
+              <p>info@goodah.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <div>
+              <h4>Phone</h4>
+              <p>+31 (0) 20 123 4567</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form class="contact-form" onsubmit="return false;">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg class="logo-icon" viewBox="0 0 60 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30 8C30 8 24 0 18 0C12 0 8 4 8 10C8 18 30 32 30 32C30 32 52 18 52 10C52 4 48 0 42 0C36 0 30 8 30 8Z" fill="white" opacity="0.9"/>
+              <rect x="5" y="28" rx="2" width="50" height="4" fill="white"/>
+              <path d="M12 32L16 50H44L48 32" stroke="white" stroke-width="3" fill="none"/>
+              <line x1="30" y1="32" x2="30" y2="50" stroke="white" stroke-width="2"/>
+              <circle cx="20" cy="54" r="3" fill="white"/>
+              <circle cx="40" cy="54" r="3" fill="white"/>
+            </svg>
+            <span class="logo-name">GOODAH</span>
+          </div>
+          <p>Choose. Buy. Change.<br>Inspiring companies to invest in society.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#platform">Our Platform</a>
+          <a href="#involved">Get Involved</a>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <a href="#contact">Contact Us</a>
+          <a href="#partners">Our Partners</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GOODAH. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

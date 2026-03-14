@@ -449,6 +449,44 @@ a {
   font-weight: 700;
 }
 
+.platform-process {
+  margin-top: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.process-item {
+  margin-bottom: 36px;
+  padding-left: 60px;
+  position: relative;
+}
+
+.process-item:last-child {
+  margin-bottom: 0;
+}
+
+.process-index {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.process-item h3 {
+  font-size: 1.25rem;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.process-item p {
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
 /* ── Stats ── */
 
 .stats {
@@ -493,6 +531,39 @@ a {
 
 .involved {
   background: var(--bg-alt);
+}
+
+.involved-quote {
+  margin-top: 40px;
+  text-align: center;
+  padding: 40px;
+  background: var(--dark);
+  border-radius: 8px;
+  color: #fff;
+}
+
+.involved-quote .quote-text {
+  font-size: 1.3rem;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.involved-quote .quote-text strong {
+  color: var(--accent);
+}
+
+.involved-quote .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.involved-quote .btn:hover {
+  background: var(--accent-hover);
 }
 
 .involved-grid {
@@ -544,6 +615,26 @@ a {
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-top: 10px;
+}
+
+.partner-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: var(--bg-alt);
+  border-radius: 8px;
+  transition: opacity 0.2s;
+}
+
+.partner-logo:hover {
+  opacity: 0.85;
+}
+
+.partner-logo img {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
 }
 
 .partner-placeholder {
@@ -704,6 +795,15 @@ a {
   padding: 20px 0;
   text-align: center;
   font-size: 0.82rem;
+}
+
+.footer-bottom a {
+  color: rgba(255,255,255,0.9);
+  text-decoration: underline;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
 }
 
 /* ── Responsive ── */

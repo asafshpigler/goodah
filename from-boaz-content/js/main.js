@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.15 });
 
-  document.querySelectorAll('.value-card, .involved-card, .platform-grid, .about-grid').forEach(el => {
+  document.querySelectorAll('.value-card, .platform-process .process-item, .about-grid, .involved-quote').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
